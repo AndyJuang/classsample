@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import VibeCard from './components/VibeCard';
 import HandoutDemo from './components/HandoutDemo';
@@ -68,7 +68,7 @@ const Home = () => {
 
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <div className="app">
         <Header />
 

@@ -1,0 +1,88 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.hero {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.1;
+  background: linear-gradient(to right, #0f172a, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlight {
+  color: var(--accent-color);
+  -webkit-text-fill-color: var(--accent-color);
+  text-shadow: 0 0 20px var(--accent-glow);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tabs-container {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  /* for scrollbar spacing if needed */
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  background: var(--bg-surface);
+  padding: 6px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+}
+
+.tab-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}

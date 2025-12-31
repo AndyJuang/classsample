@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Header from './components/Header';
 import VibeCard from './components/VibeCard';
 import HandoutDemo from './components/HandoutDemo';
+import NanoBanana from './components/NanoBanana';
 import { examples, tags } from './data/examples';
 import './App.css';
 
@@ -75,6 +76,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/handout" element={<HandoutDemo />} />
+            <Route path="/nano-banana" element={<NanoBanana />} />
           </Routes>
         </main>
 

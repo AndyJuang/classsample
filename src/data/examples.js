@@ -15,7 +15,7 @@ export const examples = [
         title: "Nano Banana Prompts Vault",
         description: "一個專業的 AI 圖像生成提示詞資料庫，提供各種風格的 Prompt 靈感與範例，包含人像、產品設計與風格轉換等分類。",
         tags: ["AI Art", "Prompts", "Nano Banana", "Inspiration"],
-        url: "https://mukiwu.github.io/prompts-vault/",
+        url: "/nano-banana",
         image: "/screenshots/nano-banana.png",
         likes: 256,
         author: "Muki Wu"

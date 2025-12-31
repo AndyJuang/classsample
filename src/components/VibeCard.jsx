@@ -6,10 +6,14 @@ import './VibeCard.css';
 const VibeCard = ({ data }) => {
     const isInternal = data.url.startsWith('/');
 
+    // Fix for GitHub Pages subdirectory: prepend base URL to local images
+    const imageSrc = data.image.startsWith('http')
+        ? data.image
+        : `${import.meta.env.BASE_URL}${data.image.startsWith('/') ? data.image.slice(1) : data.image}`;
     return (
         <div className="vibe-card animate-fade-in">
             <div className="card-image-container">
-                <img src={data.image} alt={data.title} className="card-image" />
+                <img src={imageSrc} alt={data.title} className="card-image" />
                 <div className="card-overlay">
                     {isInternal ? (
                         <Link to={data.url} className="visit-btn">
@@ -48,7 +52,7 @@ const VibeCard = ({ data }) => {
                     </button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
